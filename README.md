@@ -1,61 +1,66 @@
-# 🚀 Spring Boot Docker Kubernetes Project
+# Spring Boot Docker Kubernetes Project
 
-A lightweight Spring Boot REST API containerized using Docker and deployed on Kubernetes.  
-This project demonstrates practical hands-on experience in containerizing Java applications and managing deployments in a Kubernetes environment.
+This is a simple Spring Boot REST application that I containerized using Docker and deployed on Kubernetes.  
+The main goal of this project was to understand how a Java application moves from local development to a containerized environment and then runs inside a Kubernetes cluster.
 
----
 
-## 🛠 Tech Stack
-Java 21 | Spring Boot | Maven | Docker | Kubernetes
 
----
+## Tech Stack
 
-## 📌 Project Overview
-✔ Developed a simple REST endpoint using Spring Boot  
-✔ Created a Dockerfile to containerize the application  
-✔ Built and pushed Docker image to Docker Hub  
-✔ Deployed the containerized application on Kubernetes  
-✔ Configured Kubernetes Deployment and Service for exposure  
+Java 21  
+Spring Boot  
+Maven  
+Docker  
+Kubernetes  
 
----
 
-## 🔥 API Endpoint
 
-GET /test-docker → Returns a welcome message from the containerized application
+## Project Description
 
----
+In this project, I created a basic REST endpoint using Spring Boot and packaged the application as a JAR file.  
+I then wrote a Dockerfile to build a Docker image for the application and pushed the image to Docker Hub.  
 
-## 🐳 Docker Workflow
+After that, I created Kubernetes Deployment and Service configuration files to deploy and expose the application inside a Kubernetes cluster.
+
+This project helped me understand the practical workflow of containerization and orchestration.
+
+
+
+## API Endpoint
+
+GET /test-docker  
+
+This endpoint returns a simple response message from the Spring Boot application running inside a Docker container.
+
+
+
+## Docker Steps
 
 mvn clean package  
 docker build -t <your-dockerhub-username>/docker-info .  
 docker login  
 docker push <your-dockerhub-username>/docker-info  
 
----
 
-## ☸ Kubernetes Deployment
+
+## Kubernetes Deployment
 
 kubectl apply -f docker-k8s-demo.yaml  
 kubectl get pods  
 kubectl get svc  
 
----
 
-## 🏗 Architecture Flow
 
-Client → Spring Boot Application → Docker Container → Kubernetes Cluster
+## What I Learned
 
----
+- How to containerize a Spring Boot application using Docker  
+- How Docker images are built and pushed to Docker Hub  
+- How to deploy applications on Kubernetes using Deployment and Service  
+- Basic understanding of container orchestration concepts  
 
-## 🎯 Learning Outcome
 
-- Understood complete containerization workflow  
-- Gained hands-on experience with Docker image lifecycle  
-- Practiced deploying and managing applications in Kubernetes  
 
----
+## Author
 
-## 👨‍💻 Author
 Amit  
-GitHub: https://github.com/amit-learner123  
+https://github.com/amit-learner123
