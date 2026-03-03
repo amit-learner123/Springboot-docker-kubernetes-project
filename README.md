@@ -61,5 +61,5 @@ Client → Spring Boot Application → Docker Container → Kubernetes Cluster
 Amit  
 GitHub: https://github.com/amit-learner123  
 
-⭐ If you like this project, give it a star!
+
 
