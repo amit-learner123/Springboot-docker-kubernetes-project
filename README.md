@@ -1,4 +1,3 @@
-# Springboot-docker-kubernetes-project
 # 🚀 Spring Boot Docker Kubernetes Project
 
 A lightweight Spring Boot REST API containerized using Docker and deployed on Kubernetes.  
@@ -60,6 +59,3 @@ Client → Spring Boot Application → Docker Container → Kubernetes Cluster
 ## 👨‍💻 Author
 Amit  
 GitHub: https://github.com/amit-learner123  
-
-
-
